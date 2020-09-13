@@ -1,0 +1,9 @@
+version: '3'
+services:
+  php:
+    container_name: git_php
+    build:
+      context: .
+    volumes:
+      - /var/www/html/medoo
+      - .:/var/www/html
